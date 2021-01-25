@@ -18,12 +18,14 @@ public class App {
 	public static void main(String[] args) {
 		//Instantiate a Deck and two Players, call the shuffle method on the deck.
 		Deck deck = new Deck(); 
-		Player player1 = new Player(); 
+		//Question 
+		Player player1 = new Player("Kate"); 
 		Player player2 = new Player(); 
 		deck.shuffleCards();
-		player1.setPlayerName("Janice");
+		//player1.setPlayerName("Janice");
 		player2.setPlayerName("William");
 		
+	
 		
 		/*
 		 * Using a traditional for loop,
@@ -48,9 +50,9 @@ public class App {
 			Card topCardPlayer1 = player1.flip(); 
 			Card topCardPlayer2 = player2.flip(); 
 			if(topCardPlayer1.getValue() > topCardPlayer2.getValue()) {
-				 player1.incrementScore(); 
+				 player1.incrementScore(1); 
 			}else {
-					player2.incrementScore(); 
+					player2.incrementScore(1); 
 				}//end if
 			}//end for loop
 		

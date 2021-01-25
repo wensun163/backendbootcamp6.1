@@ -59,8 +59,9 @@ public class Player{
 	/*
 	 * incrementScore (adds 1 to the Player’s score field)
 	 */
-	public void incrementScore () {
-		score ++; 
+	public void incrementScore (int num) {
+		score +=num;
+		//score ++; 
 	}//end incrementScore 
 
 	//Setter and Getter 

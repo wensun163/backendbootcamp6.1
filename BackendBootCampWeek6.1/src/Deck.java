@@ -30,8 +30,10 @@ public class Deck {
 			for (int i =2; i<15; i++) {
 				for(String suit:suits) {
 					cards.add(new Card(i,suit)); 
+					System.out.println(cards.size()); 
 				}//end for
 			}//end for
+			System.out.println(cards.toString());
 		}//end constructor 
 	
 	

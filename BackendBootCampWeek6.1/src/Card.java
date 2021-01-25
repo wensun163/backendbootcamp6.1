@@ -1,6 +1,4 @@
 
-
-
 /*
  * Backend Bootcamp Week6 
  * @Author Wendy Sun
@@ -57,7 +55,7 @@ public class Card {
 		}
 		
 		name += " of " + suit; 
-		
+		System.out.println(name); 
 	}
 	
 	/*
@@ -71,7 +69,10 @@ public class Card {
 	
 	
 	public void setValue(int value) {
+		//Question 
+		if(value >1 && value < 15) {
 			this.value = value;
+		}
 	}
 	
 	public String getName() {
